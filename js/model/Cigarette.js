@@ -1,2 +1,0 @@
-/** אירוע עישון יחיד. timestamp גולמי מאפשר סטטיסטיקות עתידיות. */
-export class Cigarette{constructor(timestamp=Date.now(),id=crypto.randomUUID()){this.id=id;this.timestamp=Number(timestamp)}get dateKey(){return new Date(this.timestamp).toLocaleDateString("en-CA")}get hour(){return new Date(this.timestamp).getHours()}static fromJSON(d){return new Cigarette(d.timestamp,d.id)}}
