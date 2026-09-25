@@ -1,22 +1,39 @@
 {
+  "id": "./",
   "name": "סופר סיגריות",
   "short_name": "סיגריות",
+  "description": "מעקב מקומי אחר סיגריות, הוצאות וסטטיסטיקות",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
   "background_color": "#f7f8ff",
   "theme_color": "#f7f8ff",
-  "description": "מעקב מקומי אחר סיגריות, הוצאות וסטטיסטיקות",
+  "lang": "he",
+  "dir": "rtl",
   "icons": [
     {
-      "src": "./icons/icon-192.svg",
+      "src": "./icons/icon-192.png",
       "sizes": "192x192",
-      "type": "image/svg+xml"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
-      "src": "./icons/icon-512.svg",
+      "src": "./icons/icon-512.png",
       "sizes": "512x512",
-      "type": "image/svg+xml"
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-192-maskable.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "./icons/icon-512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }
