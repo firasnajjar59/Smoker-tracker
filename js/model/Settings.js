@@ -1,0 +1,2 @@
+/** הגדרות כספיות וחישוב מחיר יחידה. */
+export class Settings{constructor(packPrice=40,cigarettesPerPack=20){this.packPrice=Number(packPrice)||0;this.cigarettesPerPack=Math.max(1,Number(cigarettesPerPack)||20)}get cigarettePrice(){return this.packPrice/this.cigarettesPerPack}static fromJSON(d={}){return new Settings(d.packPrice??40,d.cigarettesPerPack??20)}}
