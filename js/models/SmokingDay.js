@@ -1,0 +1,2 @@
+/** אוסף אירועי העישון של יום אחד. */
+export class SmokingDay{constructor(dateKey,cigarettes=[],price=0){this.dateKey=dateKey;this.cigarettes=[...cigarettes].sort((a,b)=>a.timestamp-b.timestamp);this.pricePerCigarette=price}get count(){return this.cigarettes.length}get cost(){return this.count*this.pricePerCigarette}get first(){return this.cigarettes[0]??null}get last(){return this.cigarettes.at(-1)??null}get averageIntervalMinutes(){if(this.count<2)return 0;return Math.round((this.last.timestamp-this.first.timestamp)/(this.count-1)/60000)}}
